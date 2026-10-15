@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francess Pabai | GIS Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #203242;
+      background: #f4f7f8;
+      line-height: 1.7;
+    }
+    header {
+      background: #123b49;
+      color: white;
+      padding: 70px 24px;
+    }
+    .container { max-width: 1050px; margin: auto; }
+    h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.2; }
+    h2 { color: #123b49; }
+    nav a { color: white; margin-right: 24px; }
+    main { padding: 30px 24px 60px; }
+    section { margin-bottom: 45px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    article {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid #d8e3e7;
+    }
+    .button {
+      display: inline-block;
+      background: #176b73;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    a:focus-visible { outline: 3px solid #e3ae48; outline-offset: 4px; }
+    footer { padding: 25px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p>GIS • GEOLOGY • SPATIAL ANALYSIS</p>
+      <h1>Francess Nyanda Pabai</h1>
+      <p>Mapping information to support communities and environmental decisions.</p>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About me</h2>
+      <p>
+        I am a GIS professional based in Gaithersburg, Maryland,
+        with a master's degree in GIS from the University of Maryland
+        and a bachelor's degree in Geology. My interests include
+        environmental analysis, community services, and interactive web mapping.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Selected projects</h2>
+      <div class="projects">
+        <article>
+          <h3>Pennsylvania Measles Dashboard</h3>
+          <p>
+            A county-level dashboard displaying reported case counts
+            and cases per 100,000 residents, with interactive charts
+            and county pop-ups.
+          </p>
+          <p><strong>Methods:</strong> Data cleaning, attribute joins,
+            population-based rates, and web visualization.</p>
+          <p><strong>Tools:</strong> ArcGIS Pro, Excel, ArcGIS Online,
+            ArcGIS Dashboards.</p>
+          <p><small>Data snapshot: October 5, 2026.
+            Updates are manual.</small></p>
+          <a class="button"
+             href="https://www.arcgis.com/apps/dashboards/ddbd7538659546dfad14d74b5b1cabcc">
+            Explore dashboard
+          </a>
+        </article>
+
+        <article>
+          <h3>Maryland Autism Services Locator</h3>
+          <p>
+            A web GIS capstone project helping users explore autism
+            support services across Maryland through category filters,
+            search, and location-based tools.
+          </p>
+          <p><strong>Methods:</strong> Service data preparation,
+            geocoding, and interactive web mapping.</p>
+          <p><strong>Tools:</strong> ArcGIS Pro, Excel, Leaflet,
+            HTML, CSS, and JavaScript.</p>
+          <p><small>Service information is a static dataset
+            and may change.</small></p>
+          <a class="button" href="/autism-project/">
+            Explore services map
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical skills</h2>
+      <p>
+        ArcGIS Pro • ArcGIS Online • ArcGIS Dashboards •
+        Experience Builder • Spatial analysis • Geocoding •
+        Data quality checks • Python • Leaflet • Excel
+      </p>
+    </section>
+  </main>
+
+  <footer>Francess Nyanda Pabai | GIS Portfolio</footer>
+</body>
+</html>
