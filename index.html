@@ -43,7 +43,10 @@
       border-radius: 6px;
       text-decoration: none;
     }
-    a:focus-visible { outline: 3px solid #e3ae48; outline-offset: 4px; }
+    a:focus-visible {
+      outline: 3px solid #e3ae48;
+      outline-offset: 4px;
+    }
     footer { padding: 25px; text-align: center; }
   </style>
 </head>
@@ -65,15 +68,47 @@
     <section id="about">
       <h2>About me</h2>
       <p>
-        I am a GIS professional based in Gaithersburg, Maryland,
+        I am a GIS professional based in the USA,
         with a master's degree in GIS from the University of Maryland
-        and a bachelor's degree in Geology from the University of Sierra Leone. 
+        and a bachelor's degree in Geology from the University of Sierra Leone.
       </p>
     </section>
 
     <section id="projects">
       <h2>Selected projects</h2>
       <div class="projects">
+
+        <article>
+          <h3>Explore Sierra Leone</h3>
+          <p>
+            An interactive tourism map featuring thirty five (35)selected attractions
+            across Sierra Leone, including beaches, heritage sites,
+            islands and natural attractions. Users can search by place
+            or category, select results to explore their locations,
+            and open map pop-ups for descriptions and source links.
+          </p>
+          <p>
+            <strong>Methods:</strong> Manual data compilation,
+            coordinate mapping, category-based symbols, pop-up
+            configuration, and responsive layouts for desktop,
+            tablet and phone.
+          </p>
+          <p>
+            <strong>Tools:</strong> ArcGIS Online and
+            ArcGIS Experience Builder.
+          </p>
+          <p>
+            <small>
+              A selection of attractions, rather than a complete
+              tourism directory. Locations are approximate.
+            </small>
+          </p>
+          <a class="button"
+             href="https://experience.arcgis.com/experience/e144787ffaca4cf78d5a376fc36f7741">
+            Explore tourism map
+          </a>
+        </article>
+
         <article>
           <h3>Pennsylvania Measles Dashboard</h3>
           <p>
@@ -81,38 +116,47 @@
             and cases per 100,000 residents, with interactive charts
             and county pop-ups.
           </p>
-          <p><strong>Methods:</strong> Data cleaning, attribute joins,
-            population-based rates, and web visualization.</p>
-          <p><strong>Tools:</strong> ArcGIS Pro, Excel, ArcGIS Online,
-            ArcGIS Dashboards.</p>
-          <p><small>Data snapshot: October 5, 2026.
-            Updates are manual.</small></p>
+          <p>
+            <strong>Methods:</strong> Data cleaning, attribute joins,
+            population-based rates, and web visualization.
+          </p>
+          <p>
+            <strong>Tools:</strong> ArcGIS Pro, Excel, ArcGIS Online,
+            ArcGIS Dashboards.
+          </p>
+          <p>
+            <small>
+              Data snapshot: October 5, 2026. Updates are manual.
+            </small>
+          </p>
           <a class="button"
              href="https://www.arcgis.com/apps/dashboards/ddbd7538659546dfad14d74b5b1cabcc">
             Explore dashboard
           </a>
         </article>
-<article>
-  <h3>Montgomery County Reported Crashes, 2023–2025</h3>
-  <p>
-    I analyzed 31,670 reported crashes to explore where and
-    when crashes occurred in Montgomery County, Maryland.
-    The dashboard combines a 1 km grid map with yearly and
-    hourly charts and summaries of injury and fatal crashes.
-  </p>
-  <p>
-    <strong>Tools:</strong> ArcGIS Pro, Excel, ArcGIS Online,
-    ArcGIS Dashboards.
-  </p>
-  <p>
-    <strong>Methods:</strong> Data cleaning, coordinate
-    projection, spatial joins, and spatial and temporal summaries.
-  </p>
-  <a class="button"
-     href="https://uofmd.maps.arcgis.com/apps/dashboards/137b3df3b39c46479599e1b59dd15571">
-    Explore dashboard
-  </a>
-</article>
+
+        <article>
+          <h3>Montgomery County Reported Crashes, 2023–2025</h3>
+          <p>
+            I analyzed 31,670 reported crashes to explore where and
+            when crashes occurred in Montgomery County, Maryland.
+            The dashboard combines a 1 km grid map with yearly and
+            hourly charts and summaries of injury and fatal crashes.
+          </p>
+          <p>
+            <strong>Tools:</strong> ArcGIS Pro, Excel, ArcGIS Online,
+            ArcGIS Dashboards.
+          </p>
+          <p>
+            <strong>Methods:</strong> Data cleaning, coordinate
+            projection, spatial joins, and spatial and temporal summaries.
+          </p>
+          <a class="button"
+             href="https://uofmd.maps.arcgis.com/apps/dashboards/137b3df3b39c46479599e1b59dd15571">
+            Explore dashboard
+          </a>
+        </article>
+
         <article>
           <h3>Maryland Autism Services Locator</h3>
           <p>
@@ -120,16 +164,24 @@
             support services across Maryland through category filters,
             search, and location-based tools.
           </p>
-          <p><strong>Methods:</strong> Service data preparation,
-            geocoding, and interactive web mapping.</p>
-          <p><strong>Tools:</strong> ArcGIS Pro, Excel, Leaflet,
-            HTML, CSS, and JavaScript.</p>
-          <p><small>Service information is a static dataset
-            and may change.</small></p>
+          <p>
+            <strong>Methods:</strong> Service data preparation,
+            geocoding, and interactive web mapping.
+          </p>
+          <p>
+            <strong>Tools:</strong> ArcGIS Pro, Excel, Leaflet,
+            HTML, CSS, and JavaScript.
+          </p>
+          <p>
+            <small>
+              Service information is a static dataset and may change.
+            </small>
+          </p>
           <a class="button" href="/autism-project/">
             Explore services map
           </a>
         </article>
+
       </div>
     </section>
 
@@ -137,8 +189,8 @@
       <h2>Technical skills</h2>
       <p>
         ArcGIS Pro • ArcGIS Online • ArcGIS Dashboards •
-        Experience Builder • Spatial analysis • Geocoding •
-        Data quality checks • Python • Leaflet • Excel
+        Experience Builder • Spatial analysis • Geocoding •QGIS•
+        Data quality checks • Python • Leaflet •Outlook• Excel
       </p>
     </section>
   </main>
