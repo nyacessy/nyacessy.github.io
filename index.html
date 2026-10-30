@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="GIS portfolio of Francess Nyanda Pabai, featuring interactive maps, dashboards and spatial analysis projects.">
   <title>Francess Pabai | GIS Portfolio</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,28 +19,63 @@
       background: #f4f7f8;
       line-height: 1.7;
     }
+
     header {
       background: #123b49;
       color: white;
       padding: 70px 24px;
     }
-    .container { max-width: 1050px; margin: auto; }
-    h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.2; }
-    h2 { color: #123b49; }
-    nav a { color: white; margin-right: 24px; }
-    main { padding: 30px 24px 60px; }
-    section { margin-bottom: 45px; }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+    }
+
+    h2 {
+      color: #123b49;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+    }
+
+    nav a {
+      color: white;
+    }
+
+    main {
+      padding: 30px 24px 60px;
+    }
+
+    section {
+      margin-bottom: 45px;
+    }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 24px;
     }
+
     article {
       background: white;
       padding: 28px;
       border-radius: 12px;
       border: 1px solid #d8e3e7;
     }
+
+    a {
+      color: #176b73;
+      overflow-wrap: anywhere;
+    }
+
     .button {
       display: inline-block;
       background: #176b73;
@@ -43,23 +84,54 @@
       border-radius: 6px;
       text-decoration: none;
     }
+
+    .button:hover {
+      background: #123b49;
+    }
+
     a:focus-visible {
       outline: 3px solid #e3ae48;
       outline-offset: 4px;
     }
-    footer { padding: 25px; text-align: center; }
+
+    #contact {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid #d8e3e7;
+    }
+
+    #contact h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+    }
+
+    @media (max-width: 360px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
       <p>GIS • GEOLOGY • SPATIAL ANALYSIS</p>
       <h1>Francess Nyanda Pabai</h1>
-      <p>Mapping information to support communities and environmental decisions.</p>
+      <p>
+        Mapping information to support communities and environmental decisions.
+      </p>
+
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -68,7 +140,7 @@
     <section id="about">
       <h2>About me</h2>
       <p>
-        I am a GIS professional based in the USA,
+        I am a GIS professional based in Gaithersburg, Maryland,
         with a master's degree in GIS from the University of Maryland
         and a bachelor's degree in Geology from the University of Sierra Leone.
       </p>
@@ -76,12 +148,12 @@
 
     <section id="projects">
       <h2>Selected projects</h2>
-      <div class="projects">
 
+      <div class="projects">
         <article>
           <h3>Explore Sierra Leone</h3>
           <p>
-            An interactive tourism map featuring thirty five (35)selected attractions
+            An interactive tourism map featuring 35 selected attractions
             across Sierra Leone, including beaches, heritage sites,
             islands and natural attractions. Users can search by place
             or category, select results to explore their locations,
@@ -144,12 +216,12 @@
             hourly charts and summaries of injury and fatal crashes.
           </p>
           <p>
-            <strong>Tools:</strong> ArcGIS Pro, Excel, ArcGIS Online,
-            ArcGIS Dashboards.
-          </p>
-          <p>
             <strong>Methods:</strong> Data cleaning, coordinate
             projection, spatial joins, and spatial and temporal summaries.
+          </p>
+          <p>
+            <strong>Tools:</strong> ArcGIS Pro, Excel, ArcGIS Online,
+            ArcGIS Dashboards.
           </p>
           <a class="button"
              href="https://uofmd.maps.arcgis.com/apps/dashboards/137b3df3b39c46479599e1b59dd15571">
@@ -181,7 +253,6 @@
             Explore services map
           </a>
         </article>
-
       </div>
     </section>
 
@@ -189,12 +260,34 @@
       <h2>Technical skills</h2>
       <p>
         ArcGIS Pro • ArcGIS Online • ArcGIS Dashboards •
-        Experience Builder • Spatial analysis • Geocoding •QGIS•
-        Data quality checks • Python • Leaflet •Outlook• Excel
+        Experience Builder • Spatial analysis • Geocoding •
+        Data quality checks • Python • Leaflet • Excel
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        For GIS opportunities, project collaborations or questions
+        about my work, please get in touch.
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:franklynbenpabai@yahoo.com">
+          franklynbenpabai@yahoo.com
+        </a>
+      </p>
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/francess-nyanda-pabai-7b4017219/">
+          Francess Nyanda Pabai
+        </a>
       </p>
     </section>
   </main>
 
-  <footer>Francess Nyanda Pabai | GIS Portfolio</footer>
+  <footer>
+    Francess Nyanda Pabai | GIS Portfolio
+  </footer>
 </body>
 </html>
